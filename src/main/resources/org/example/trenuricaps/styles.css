@@ -1,0 +1,36 @@
+/* styles.css */
+.root {
+    -fx-font-family: 'Arial';
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.combo-box, .check-box, .list-view, .label {
+    -fx-font-size: 14px;
+}
+
+.combo-box {
+    -fx-pref-width: 200px;
+}
+
+.list-view {
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.label {
+    -fx-text-fill: #333;
+}

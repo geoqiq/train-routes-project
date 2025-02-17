@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trenuricaps.controller.ClientController">
+   <stylesheets>
+      <URL value="@styles.css" />
+   </stylesheets>
+   <children>
+      <VBox spacing="10" layoutX="20" layoutY="20">
+         <HBox spacing="10">
+            <ComboBox fx:id="departureCombo" promptText="Select Departure" prefWidth="300.0" maxWidth="Infinity" />
+            <ComboBox fx:id="destinationCombo" promptText="Select Destination" prefWidth="300.0" maxWidth="Infinity" />
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+         </HBox>
+         <CheckBox fx:id="checkBox" text="Direct routes only?" />
+         <ListView fx:id="listView" prefHeight="200.0" prefWidth="560.0" />
+         <Label fx:id="textCheck" text="Label" />
+      </VBox>
+   </children>
+</AnchorPane>
